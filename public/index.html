@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#EFF4FF">
+<title>Secret Santa</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg" aria-hidden="true"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i><i class="blob b4"></i></div>
+
+<header class="topbar glass" id="topbar" hidden>
+  <div class="brand"><span class="logo">🎁</span><span id="eventTitle">Secret Santa</span></div>
+  <button class="icon-btn" id="bellBtn" aria-label="Notifications">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 8 3 8H3s3-1 3-8"/><path d="M10.3 20a1.94 1.94 0 0 0 3.4 0"/></svg>
+    <span class="dot" id="bellDot" hidden></span>
+  </button>
+</header>
+
+<main id="app"></main>
+
+<div class="sheet-backdrop" id="sheetBackdrop" hidden></div>
+<aside class="sheet glass" id="sheet" hidden aria-label="Notifications">
+  <div class="sheet-handle"></div>
+  <h3>Notifications</h3>
+  <div id="notifList"></div>
+</aside>
+
+<div class="toast glass" id="toast" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>

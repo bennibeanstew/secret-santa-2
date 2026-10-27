@@ -1,0 +1,14 @@
+{
+  "name": "secret-santa",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.14",
+    "pg": "^8.23.1"
+  }
+}
